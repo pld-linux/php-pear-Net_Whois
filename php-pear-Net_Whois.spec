@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The PEAR::Net_Whois looks up records in the databases maintained by
 several Network Information Centers (NICs).
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Klasa PEAR::Net_Whois przeszukuje rekordy w bazach danych zarz±dzanych
