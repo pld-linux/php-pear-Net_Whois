@@ -1,8 +1,9 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Net
-%define         _subclass       Whois
+%define		_class		Net
+%define		_subclass	Whois
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - PEAR::Net_Whois class
 Summary(pl):	%{_pearname} - klasa PEAR::Net_Whois
 Name:		php-pear-%{_pearname}
