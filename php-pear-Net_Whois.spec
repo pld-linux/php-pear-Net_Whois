@@ -8,7 +8,7 @@ Summary:	%{_pearname} - PEAR::Net_Whois class
 Summary(pl):	%{_pearname} - klasa PEAR::Net_Whois
 Name:		php-pear-%{_pearname}
 Version:	1.0
-Release:	2.1
+Release:	2.2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 # Source0-md5:	cc172a0afdf4c630bd5a9128e35ce935
@@ -16,6 +16,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Net_Whois/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
+Requires:	php-pear-Net_Socket
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
