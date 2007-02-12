@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - PEAR::Net_Whois class
-Summary(pl):	%{_pearname} - klasa PEAR::Net_Whois
+Summary(pl.UTF-8):   %{_pearname} - klasa PEAR::Net_Whois
 Name:		php-pear-%{_pearname}
 Version:	1.0
 Release:	4
@@ -28,9 +28,9 @@ several Network Information Centers (NICs).
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasa PEAR::Net_Whois przeszukuje rekordy w bazach danych zarz±dzanych
-przez ró¿ne Network Information Centers (NICs).
+%description -l pl.UTF-8
+Klasa PEAR::Net_Whois przeszukuje rekordy w bazach danych zarzÄ…dzanych
+przez rÃ³Å¼ne Network Information Centers (NICs).
 
 Ta klasa ma w PEAR status: %{_status}.
 
