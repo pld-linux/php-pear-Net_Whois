@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - PEAR::Net_Whois class
-Summary(pl.UTF-8):   %{_pearname} - klasa PEAR::Net_Whois
+Summary(pl.UTF-8):	%{_pearname} - klasa PEAR::Net_Whois
 Name:		php-pear-%{_pearname}
 Version:	1.0
 Release:	4
