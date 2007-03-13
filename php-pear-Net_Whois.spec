@@ -11,8 +11,8 @@ Version:	1.0
 Release:	4
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	cc172a0afdf4c630bd5a9128e35ce935
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	cc172a0afdf4c630bd5a9128e35ce935
 URL:		http://pear.php.net/package/Net_Whois/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
