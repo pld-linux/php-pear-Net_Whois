@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - PEAR::Net_Whois class
 Summary(pl.UTF-8):	%{_pearname} - klasa PEAR::Net_Whois
 Name:		php-pear-%{_pearname}
-Version:	1.0
-Release:	5
+Version:	1.0.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	cc172a0afdf4c630bd5a9128e35ce935
+# Source0-md5:	d1075070ae360fb2a243bf2812b99c00
 URL:		http://pear.php.net/package/Net_Whois/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -34,6 +34,20 @@ przez różne Network Information Centers (NICs).
 
 Ta klasa ma w PEAR status: %{_status}.
 
+%package tests
+Summary:	Tests for PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
+Group:		Development/Languages/PHP
+AutoReq:	no
+Requires:	%{name} = %{version}-%{release}
+AutoProv:	no
+
+%description tests
+Tests for PEAR::%{_pearname}.
+
+%description tests -l pl.UTF-8
+Testy dla PEAR::%{_pearname}.
+
 %prep
 %pear_package_setup
 
@@ -50,3 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
+
+%files tests
+%defattr(644,root,root,755)
+%{php_pear_dir}/tests/Net_Whois
